@@ -153,3 +153,164 @@
 //  letter="n"
 //  var result=country.indexOf(letter)
 //  document.write("string: "+country+"</br>"+"index of 'n': "+result)
+
+// 4. Write a program to find the last index of letter “l” in the
+// word “Hello World” and display the result in your browser.
+// var str = "Hello World";
+// var letter = "l";
+// var lastIndex = str.lastIndexOf(letter);
+// document.write("The last index of the letter '" + letter + "' in the word '" + str + "' is: " + lastIndex);
+
+// 5. Write a program to find the character at 3rd index in the
+// word “Pakistani” and display the result in your browser.
+// var str = "Pakistani";
+// var index = 3;
+// var character = str.charAt(index);
+// document.write("The character at index " + index + " in the word '" + str + "' is: " + character);
+
+// 6. Repeat Q1 using string concat() method.
+// var firstName = prompt("Please enter your first name:");
+// var lastName = prompt("Please enter your last name:");
+// var fullName = firstName.concat(" ",lastName)
+// alert("Hello, " + fullName + "! Nice to meet you.");
+
+// Write a program to replace the “Hyder” to “Islam” in the
+// word “Hyderabad” and display the result in your browser.
+// var cityName = "Hyderabad";
+// var newCityName = cityName.replace("Hyder", "Islam");
+// document.write("The new city name is: " + newCityName);
+
+// 8. Write a program to replace all occurrences of “and” in the
+// string with “&” and display the result in your browser.
+// var message = “Ali and Sami are best friends. They play cricket and
+// football together.”;
+// var message = "Ali and Sami are best friends. They play cricket and football together.";
+// var newMessage = message.replaceAll("and", "&");
+// document.write(newMessage);
+
+// 9. Write a program that converts a string “472” to a number
+// 472. Display the values & types in your browser.
+// var str = "472";
+// document.write("Value: " + str+ "<br>");
+// document.write("Type: " + typeof str);
+// var num = Number(str);
+// document.write("Value: " + num + "<br>");
+// document.write("Type: " + typeof num);
+
+// 10. Write a program that takes user input. Convert and
+// show the input in capital letters.
+// var input= prompt("Enter something");
+// document.write(input.toUpperCase())
+
+// 11. Write a program that takes user input. Convert and
+// show the input in title case.
+// Prompt the user for a string
+// var str = prompt("Please enter a string:");
+// var titleCaseStr = str.toLowerCase().split(' ').map(function(word) {
+//   return word.charAt(0).toUpperCase() + word.slice(1);
+// }).join(' ');
+// document.write("Title case: " + titleCaseStr);
+
+// 12. Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+// var num = 35.36;
+// var numString = num.toString().replace('.', '');
+// document.write(numString);
+
+    // 13. Write a program to take user input and store username
+    // in a variable. If the username contains any special symbol
+    // among [@ . , !], prompt the user to enter a valid username.
+    // For character codes of [@ .
+
+    // Note:
+    // ASCII code of ! is 33
+    // ASCII code of , is 44
+    // ASCII code of . is 46
+    // ASCII code of @ is 64
+    // var username = prompt("Enter your username:");
+    // function containsSpecialSymbols(username) {
+    //     for (var i = 0; i < username.length; i++) {
+    //         var charCode = username.charCodeAt(i);
+    //         if (charCode === 33 || charCode === 44 || charCode === 46 || charCode === 64) {
+    //             return true;
+    //         }
+    //     }
+    //     return false;
+    // }
+    // if (containsSpecialSymbols(username)) {
+    //     alert("Please enter a valid username without special symbols [@ . , !]");
+    // } else {
+    //     alert("Username accepted: " + username);
+    // }
+ 
+
+    // CHAPTER 35-38
+    // var num1 = parseFloat(prompt("Enter the first number:"));
+    //     var num2 = parseFloat(prompt("Enter the second number:"));
+    // function addNumbers() {
+    //     var sum = num1 + num2;
+    //     return sum;
+    // }
+    // var result = addNumbers();
+    // alert("The sum of the two numbers is: " + result);
+    
+
+    // 5. Write a function that squares its argument.
+    // function square(x) {
+    //     return x * x;
+    //   }
+
+    // 6. Write a function that computes factorial of a number.
+    // function factorial(n) {
+    //     if (n == 0) {
+    //       return 1;
+    //     } else {
+    //       return n * factorial(n - 1);
+    //     }
+    //   }
+    //   const result = factorial(5); 
+
+//     7. Write a function that take start and end number as inputs
+// & display counting in your browser.
+
+// function count(start, end) {
+//     for (let i = start; i <= end; i++) {
+//       document.write(i + "</br>");
+//     }
+//   }
+//   count(1, 10);
+
+// 9. Write a function that calculates the area of a rectangle.
+// A = width * height
+// Pass width and height in following manner:
+
+// i. Arguments as value
+// ii. Arguments as variables
+
+// function calculateArea(width, height) {
+//     return width * height;
+//   }
+//   const area = calculateArea(5, 10);
+// document.write("The area of the rectangle is: " + area);
+
+// let width = 5;
+// let height = 10;
+// const area = calculateArea(width, height);
+// document.write("The area of the rectangle is: " + area);
+
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+// function titleCase(str) {
+//     return str.toLowerCase().split(' ').map(function(word) {
+//       return word.charAt(0).toUpperCase() + word.slice(1);
+//     }).join(' ');
+//   }
+//   const input = 'the quick brown fox';
+// const output = titleCase(input);
+// console.log(output);
